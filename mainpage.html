@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome To nclis-2107</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="csssheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Footer-with-logo.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <center><font id="headstyle">NCLIS 2017</font>
+        <h3 id="head3">NATIONAL Conference ON LIBRARY AND INFORMATION SCIENCE TRENDS AND INNOVATIONS</h3>
+        <p>Organized by Department Library & Information Science, Andhra University, VisakhapatnamTo Commemorate the 125th Birth Anniversary of Dr. S.R. Ranganathan Father of Library Science On December 29, 2017</p>
+        </center>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+
+    <div id="first-slider">
+        <div id="carousel-example-generic" class="carousel slide carousel-fade">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!-- Item 1 -->
+                <div class="item active slide1">
+                    <div class="row"><div class="container">
+                        <div class="col-md-9 text-left">
+                            <h3 data-animation="animated bounceInDown" style="color:#02176F; text-shadow: 2px 2px #fff;">Andhra University</h3>
+                            <h5 data-animation="animated bounceInUp">The Andhra University Library was started in the year 1927, renamed as V.S.Krishna Memorial Library in 1968 as a mark of respect to the former Vice-Chancellor Dr. V.S.Krishna.</h5>             
+                         </div>
+                    </div></div>
+                 </div> 
+                <!-- Item 2 -->
+                <div class="item slide2">
+                    <div class="row"><div class="container">
+                        <div class="col-md-7 text-left">
+                            <h3 data-animation="animated bounceInDown" style="color:#3f2a14; text-shadow: 2px 2px #fff;">Andhra University</h3>
+                            <h5 data-animation="animated bounceInUp">The Andhra University Library was started in the year 1927, renamed as V.S.Krishna Memorial Library in 1968 as a mark of respect to the former Vice-Chancellor Dr. V.S.Krishna.</h5>
+                         </div>
+                    </div></div>
+                </div>
+                <!-- Item 3 -->
+                <div class="item slide3">
+                    <div class="row"><div class="container">
+                        <div class="col-md-7 text-left">
+                            <h3 data-animation="animated bounceInDown" style="color:#6F021E; text-shadow: 2px 2px #fff;">Andhra University</h3>
+                            <h5 data-animation="animated bounceInUp">The Andhra University Library was started in the year 1927, renamed as V.S.Krishna Memorial Library in 1968 as a mark of respect to the former Vice-Chancellor Dr. V.S.Krishna.</h5>
+                         </div>    
+                    </div></div>
+                </div>
+                <!-- End Item 4 -->
+            </div>
+            <!-- End Wrapper for slides-->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+<script>
+(function( $ ) {
+
+    //Function to animate slider captions 
+  function doAnimations( elems ) {
+    //Cache the animationend event in a variable
+    var animEndEv = 'webkitAnimationEnd animationend';
+    
+    elems.each(function () {
+      var $this = $(this),
+        $animationType = $this.data('animation');
+      $this.addClass($animationType).one(animEndEv, function () {
+        $this.removeClass($animationType);
+      });
+    });
+  }
+  
+  //Variables on page load 
+  var $myCarousel = $('#carousel-example-generic'),
+    $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+    
+  //Initialize carousel 
+  $myCarousel.carousel();
+  
+  //Animate captions in first slide on page load 
+  doAnimations($firstAnimatingElems);
+  
+  //Pause carousel  
+  $myCarousel.carousel('pause');
+  
+  
+  //Other slides to be animated on carousel slide event 
+  $myCarousel.on('slide.bs.carousel', function (e) {
+    var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+    doAnimations($animatingElems);
+  });  
+    $('#carousel-example-generic').carousel({
+        interval:3000,
+        pause: "false"
+    });
+  
+})(jQuery); 
+
+</script>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">NCLS 2017</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#home">HOME</a></li>
+        <li><a href="#org">Orrganizing commitee</a></li>
+        <li><a href="#thems">Themes</a></li>
+        <li><a href="#Registration">Registration</a></li>
+        <li><a href="#Contat">Contat</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" id="home">
+
+<center><font id="homehead">ANDHRA UNIVERSITY</font></center>
+
+Andhra University is one of the oldest educational institutions in the country. Andhra University was constituted in the year 1926. The 86-year-old institution is fortunate to have Sir C.R. Reddy as its founder Vice-Chancellor, as the steps taken by this visionary proved to be fruitful in the long run. Former President of India Dr. Sarvepalli Radhakrishnan was one of its Vice-Chancellors who succeed Dr. C. R. Reddy in 1931. The leaders of the university always believed that excellence in higher education is the best investment for the country and engaged the services to high standards for teaching and research. Keeping in pace with the global needs and challenges, the University is offering several new Courses of relevance and Contemporary significance. Andhra University has established an international image in academic excellence with the accreditation by NAAC with ‘A’ grade in April 2002 and is general University in the country to get ISO 9001: 2008 Certification in 2009. The University has five constituent colleges offering total 313 courses in various specializations and four AU Campuses at different locations.
+
+<h2 id="subhead">About the Department:</h2>
+
+The Department of Library and Information Science, Andhra University had its origin in 1935. The courses were designed to suit the requirements to both the higher and the lower orders of librarianship and they led either to a Graduate University Diploma or a certificate of proficiency course was the first of its kind conducted in India.
+
+The courses were revived in 1948, and C.L.Sc. and D.L.Sc. courses were conducted till 1958. In 1961 Prof. Koneru Ramakrishna Rao took charge as Chief Librarian and Head, Department of Library Science, He bought with him a rich and varied experience of Library Science Education and Library Services from Western Countries. The organization of the Department on a regular basis and modernization of the curriculum were initiated by Prof. K.Ramakrishna Rao. As part of the programme to strengthen the Department, a full-time Lecturer post was created and Sri. K.Siva Reddy was appointed. In compliance with the U.G.C. recommendations, the C.L.Sc. course was discontinued in 1962. In the year 1968 the Department attained the status of a full-fledged Teaching Department. The Diploma course was redesigned as Bachelor of Library and Information Science (1979). These changes indicate the change and modernization of the curriculum. In 1979-80, the Master of Library and Information Science programme was started in response to the felt need of the students of this department.  The Department has been providing facilities for the pursuit of Research Studies leading to the award of Doctor of Philosophy.
+
+<h2 id="subhead">About the Visakhapatnam</h2>
+
+Visakhapatnam is a port city in the Indian state of Andhra Pradesh. It is located on the eastern shore of India, nestled among the hills of the Eastern Ghats and facing the Bay of Bengal to the east. The city is home to several state owned heavy industries, one the most advanced steel plant and has one of the country’s largest ports and oldest shipyard. It has the only natural harbor on the eastern coast of India. Andhra University, a prominent seat of education in Andhra Pradesh, is located in this city.
+
+<h2 id="subhead">About the Conference</h2>
+
+Welcome to the NCLIS 2017, National Conference on Library and Information Science. The conference is to be held in Andhra University, Visakhapatnam, India on December 29, 2017. NCLIS 2017 aims to offer a forum for scholars, educators, LIS practitioners and professionals from different parts of the country to share research achievements and to establish research network and to find global partners for future collaboration. Prospective contributors are welcome to submit full papers. NCLIS 2017 welcomes contributors from LIS Professionals and other related areas to join this event.
+
+<h2 id="subhead">Objectives of this conference</h2>
+This conference has envisaged to
+    <ul>
+    <li>Understand the applications of Big Data, Cloud Computing and Data Analysis in Libraries.</li>
+    <li>Assess the use of e-Learning resources and communication strategies.</li>
+    <li>Creation of Digital libraries and Issues involved in future libraries</li>
+    <li>Apply Marketing concepts in LIS Products and Services.</li>
+    <li>Study the technology and innovations in libraries.</li>
+    </ul>
+</div>
+<br>
+<!-- End of home-->
+<div class="container" id="org">
+
+          <center><font id="homehead">ORGANIZING COMMITTEE </font></center>
+          <center>
+          <div>
+              <h4 style="font-family: cursive;"><b><u>CHIEF PATRON</u></b></h4>
+              <p><strong>Prof. G. NAGESWARA RAO</strong></p>
+              <p>Vice-Chancellor, Andhra University</p>
+          </div>
+          </center>
+          <div>
+          <center> <h4><b><u>PATRONS</u></b></h4></center>
+          <div class="row" style="background-color:#000; color:#fff; border-radius:5px; padding: 1%;">
+            <div class="col-sm-4">
+               <p><strong>Prof. K. Gayatri Devi</strong></p>
+               <p>Rector, Andhra University</p>
+            </div>
+            <div class="col-sm-4">
+               <p><strong>Prof. U. Umamaheswara Rao</strong></p>
+              <p>Registrar, Andhra University</p>
+            </div>
+            <div class="col-sm-4">
+                <p><strong>Prof. K. Rammohan Rao</strong></p>
+              <p>Principal, College of Arts &amp; Commerce, Andhra University</p>
+              <p><strong>Secretary - Organizing Committee</strong></p>
+            </div>
+          </div>   
+           <br>
+            <div class="row" style="background-color: #2F4F4F; color:#fff; border-radius:5px; padding: 1%;"> 
+              <h4><b>Address for Correspondence</b></h4>
+              <p>Prof. K. Somasekhara Rao</p>
+              <p>Coordinator –NCLIS-2017</p>
+              <p>Department of Library &amp; Information Science</p>
+              <p>College of Arts &amp; Commerce</p>
+              <p>Andhra University</p>
+              <p>Visakhapatnam</p>
+              <p>Mobile: 9440372318</p>
+              <p>Email for correspondence: aunclis2017@gmail.com</p>
+            </div>   
+          </div>
+          <br>
+          <div class="row" id="comitte" style="color:#fff; border-radius:5px; padding: 1%;"> 
+               <h4><b>Advisory Committee</b></h4>
+               <ul>
+                <li>Prof. B. Ramesh babu,(Rtd), University of Madras</li>
+                <li>Prof. Chandran D, Retired Professor, SV University</li>
+                <li>Prof. B.D. Kumbar, Dharwad University</li>
+                <li>Prof. Das, K.C. Utkal University, Odhisha</li>
+                <li>Prof. K. Veeranjalenu, University Libraian, &nbsp;</li>
+                <li>Prof. B. K. Chowdary, (Rtd)</li>
+                <li>Prof. K. Venkata Ro, University Librarian, ANU</li>
+                <li>Prof. N. Neerakshna Babu, PST University</li>
+                <li>Prof. B. Ramesha, Bangalore University</li>
+                <li>Prof. B.S. Biradar, Kuvempu University, Shimoga</li>
+                <li>Prof. Mallinath Kumbar, University of Mysore, Mysore</li>
+                <li>Prof. M. Nagarajan, Annamalai University</li>
+                <li>Prof. S. Ravi, Annamalai Unviersity</li>
+                <li>Prof. P.G. Tadasad, KSWU, Vijayapur</li>
+                <li>Prof. Bullu Maharana, Sambalapur University</li>
+                <li>Prof. Mishra, Mizoram</li>
+                <li>Dr. M. Doraswamy, Kuppam Univesity</li>
+                <li>Dr. M. Madhusudhan, Delhi University</li>
+                <li>Dr. P, Rajendran, SRM University</li>
+                <li>Dr. D. Joyson Soundrarajan, CMC, Vellore</li>
+              </ul>
+        </div>
+        <br>
+        <div class="row" id="Advisory" style="color:#fff; border-radius:5px; padding: 1%;"> 
+          <h4><b>Local Advisory Committee</b></h4>
+          <ul>
+            <li>Prof. P. Soma Raju, (Rtd)</li>
+            <li>Prof. R.S.R. Vara Lakshmi (Rtd)</li>
+            <li>Prof. P. Bhaskara Rao (Rtd)</li>
+            <li>Prof. J. Vijaya Kumari (Rtd)</li>
+            <li>Prof. C. Sasikala (Rtd)</li>
+            <li>Dr. David Livingstone (Rtd)</li>
+            <li>Prof. G. Valasayya</li>
+            <li>Dr. V. Dhana Raju</li>
+            <li>Prof. S.S. Janaradhana Rao (Rtd)</li>
+            <li>Dr. T.M.K. Gandhi (Rtd)</li>
+            <li>Prof. K. Satyanarayana (Rtd)</li>
+            <li>Dr. Doraswamy Naik, University Librarian, JNTU Kakinada</li>
+            <li>Dr. G. Nagarathnamani, University Librarian, GITAM</li>
+          </ul>
+         </div>
+         <br>
+         <div class="row" id="Working" style="color:#fff; border-radius:5px; padding: 1%;"> 
+         <h4><b>Working Committee</b></h4>
+          <ul id="ulfloat">
+            <li>Dr. T. Sai Ramesh (Rtd)</li>
+            <li>Dr. C. Nageswara Rao</li>
+            <li>Dr. G.Anna Prasad,</li>
+            <li>Dr. G. Prabhakar</li>
+            <li>Dr. Y.Fathima</li>
+            <li>Dr. N. Acthamamba</li>
+            <li>Dr. T.Venkata Rao</li>
+            <li>Dr. N.Venkata Rao</li>
+            <li>Dr. P. Suresh Kumar</li>
+            <li>Dr. John Sudheer</li>
+            <li>Dr. Ismail</li>
+            <li>Dr. Ghouse</li>
+            <li>Dr. M. Subba Rao</li>
+            <li>Mr. K. Uma Mahesh Yadav</li>
+            <li>Mr. S. Suresh</li>
+            <li>Mr. M. Ramu</li>
+            <li>Mr. S. Sivaji Ganesh</li>
+          </ul>
+          <ul>
+            <li>Mrs. Satyavathi</li>
+            <li>Mr. R. Ramesh</li>
+            <li>Mr. G. Nageswara Rao</li>
+            <li>Mr. M. Venkata Rao</li>
+            <li>Mr. G. Ayya Babu</li>
+            <li>Mr. L. Satyanarayana</li>
+            <li>Mr. K. Narishma Murthy</li>
+            <li>Mrs. K. Aruna</li>
+            <li>Mr. B. Demudu</li>
+            <li>Mr. Baba</li>
+            <li>Dr. J. Vijay Kumar</li>
+            <li>Mr. Rajendra Prasad</li>
+            <li>Mr. Nageswara Rao</li>
+            <li>Mrs. Kiranmami</li>
+            <li>Mr. Akhil Kumar</li>
+            <li>Mr. Kaladhar</li>
+          </ul>
+          </div>
+</div> <!-- end of organizing commitee //-->
+  
+<div class="container" id="thems">
+<center><h2 id="homehead">Themes</h2></center>
+<p style="color:darkred;">Topics of interest include, but are not limited to: <strong>Information Science</strong></p>
+  <div class="row destacados">
+    <div class="col-md-4">
+        <div>
+        <img src="inf.jpg" alt="Texto Alternativo" style="border-radius: 10%;">
+        <h2>Information Science</h2>
+        <div id="ifoverflow">
+        <table class="table table-bordered"> 
+           <tr><td>Big Data</td></tr>
+           <tr><td>Cloud computing</td></tr>
+           <tr><td>Communication Strategies</td></tr>
+           <tr><td>Data Analysis and Data Mining</td></tr>
+           <tr><td>Information and Knowledge Services</td></tr>
+           <tr><td>Information Seeking Behavior</td></tr>
+           <tr><td>Information Literacy</td></tr>
+           <tr><td>Technology Impact on Learning Resources</td></tr>
+        </table>
+        </div>
+      </div>
+      <br>
+       <a href="#" class="btn btn-primary" title="Enlace">Learn More »</a>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <img src="lib.jpg" alt="Texto Alternativo" style="border-radius: 10%;">
+        <h2>Library Services</h2>
+        <div id="ifoverflow">
+         <table class="table table-bordered"> 
+           <tr><td>Automated Library</td></tr>
+           <tr><td>Bibliometrics</td></tr>
+           <tr><td>Library Legislation</td></tr>
+           <tr><td>Development and Assessment of Digital Repositories</td></tr>
+           <tr><td>Future Libraries</td></tr>
+           <tr><td>Public Libraries</td></tr>
+           <tr><td>Academic Libraries</td></tr>
+          <tr><td>Special Libraries</td></tr>
+           <tr><td>Knowledge Management</td></tr>
+          <tr><td>Libraries as Learning Organizations/Institutions</td></tr>
+          <tr><td>Library Buildings and Equipment</td></tr>
+          <tr><td>Library Consortia</td></tr>
+          <tr><td>MOOCs and LIS Education</td></tr>
+          <tr><td>Technology and Innovations in Libraries</td></tr>
+          <tr><td>Other Emerging Issues Related to Libraries</td></tr>
+        </table>  
+        </div>  
+      </div>
+      <br>
+       <a href="#" class="btn btn-primary" title="Enlace">Learn More »</a>
+    </div>
+    <div class="col-md-4">
+      <div>
+        <img src="lm.jpg" alt="Texto Alternativo" style="border-radius: 10%;">
+        <h2>Innovations in Library Management</h2>
+        <div id="ifoverflow">
+        <table class="table table-bordered"> 
+           <tr><td>Marketing of Library and Information Products and Services</td></tr>
+           <tr><td>Technology and Innovations in Libraries</td></tr>
+           <tr><td>Technology Transfer and Innovation in Library management</td></tr>
+           <tr><td>Changes in Learning, Research, Information Needs, and Behavior of Users</td></tr>
+        </table>
+        </div>
+      </div>
+      <br>
+       <a href="#" class="btn btn-primary" title="Enlace">Learn More »</a>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="Registration">
+<center><h2 id="homehead">Registration</h2></center>
+  <table class="table table-hover table-bordered">
+      <tr><th colspan="2"><center>Submission Deadline </center> </th></tr>
+      <tr><th>Notification of Acceptance/Rejection</th><td>December 02, 2017</td></tr>
+      <tr><th>Registration Deadline    </th><td>December 10, 2017</td></tr>
+      <tr><th>Conference Date   </th><td> December 29, 2017</td></tr>
+      <tr><th>Registration Fee</th><td>India:   500/- (Includes Conference Kit, Conference Volume, Lunch and Dinner)</td></tr>
+  </table>
+  <table class="table table-hover table-bordered">
+      <tr><th colspan="2"><center>Online Transfer Details:</center></th></tr>
+      <tr><th>Name of the account</th><td>ORGANIZING SECRETARY, NCLS-2017</td></tr>
+      <tr><th>Account number </th><td> 37262838213</td></tr>
+      <tr><th>IFSC Code  </th><td>SBIN0000772</td></tr>
+      <tr><th>Branch </th><td>State Bank of India, Andhra University, South Campus,Visakhapatnam, Andhra Pradesh.</td></tr>
+  </table>
+</div> <!-- End of registrtion //--> 
+
+
+<div class="container" id="Contat">
+     <center><h2 id="homehead">Contact Us</h2></center>
+</div> <!-- End os Conatct //-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                                </span>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">
+                                Enter MobileNo</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter MobileNo" required="required" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+            <legend><span class="glyphicon glyphicon-globe"></span> Our Details</legend>
+            <address>
+                <strong> Prof. K. Somasekhara Rao</strong><br>
+                Coordinator –NCLIS-2017<br>
+                Department of Library & Information Science <br>
+                College of Arts & Commerce<br>
+                Andhra University ,Visakhapatnam<br>
+                <abbr title="Phone">
+                    P:</abbr>
+                9440372318
+            </address>
+            <address>
+                <a href="mailto:#">Email for correspondence: aunclis2017@gmail.com</a>
+            </address>
+            </form>
+        </div>
+    </div>
+</div>
+  <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Designed by</h5>
+                    <ul>
+                        <li><a href="#">Mr.S.Suresh Librarian, ANITS,</a></li>
+                        <li> <a href="http://lavakumar.000webhostapp.com/">T.Lavakumar(B.tech) ANITS</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Mobile NO:</h5>
+                    <ul>
+                        <li><a href="#">0-9000829049</a></li>
+                        <li><a href="#">0-9949474727</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5>NCLS-2017</h5>
+                    <p>Welcome to the NCLIS 2017, National Conference on Library and Information Science. The conference is to be held in Andhra University, Visakhapatnam, India on December 29, 2017. </p>
+                </div>
+            </div>
+        </div>
+        <div class="second-bar">
+           <div class="container">
+                <h2 class="logo"><a href="#"> NCLIS 2017 @ copyright 2017</a></h2>
+                <div class="social-icons">
+                    <a href="https://twitter.com/lavakumar287" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/lavakumar.lavakumar.9083" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a mailto="lavakumarfire999@gmail.com" class="google"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</section>
+</body>
+</html>
